@@ -34,4 +34,10 @@ RSpec.describe RoverPosition do
      expect(rp.state).to eq([-1, 0,:w])
    end
 
+    it "r + r + m" do
+     2.times { rp.r }
+     rp.m
+     expect(rp.state).to eq([0, -1,:s])
+   end
+
  end

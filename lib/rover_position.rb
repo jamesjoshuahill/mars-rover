@@ -23,6 +23,8 @@ class RoverPosition
       @state[0] += 1
     when :w
       @state[0] -= 1
+    when :s
+      @state[1] -= 1
     end
   end
 
