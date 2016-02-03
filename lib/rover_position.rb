@@ -15,6 +15,10 @@ class RoverPosition
     @state = [0, 0, direction]
   end
 
+  def m
+    @state = [0,1,:n]
+  end
+
   private
   DIRECTIONS = [:n, :e, :s, :w]
 
