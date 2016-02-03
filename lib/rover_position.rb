@@ -1,18 +1,18 @@
 class RoverPosition
-  attr_reader :position
+  attr_reader :state
   def initialize
     @direction_index = 0
-    @position = [0, 0, direction]
+    @state = [0, 0, direction]
   end
 
   def l
     @direction_index -=1
-    @position = [0, 0, direction]
+    @state = [0, 0, direction]
   end
 
   def r
     @direction_index +=1
-    @position = [0, 0, direction]
+    @state = [0, 0, direction]
   end
 
   private
