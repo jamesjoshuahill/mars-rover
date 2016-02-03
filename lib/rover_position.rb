@@ -2,11 +2,12 @@ class RoverPosition
   attr_reader :position
   def initialize
     @direction_index = 0
-    @position = [0, 0, :n]
+    @position = [0, 0, direction]
   end
 
   def l
-    @position = [0, 0, :w]
+    @direction_index -=1
+    @position = [0, 0, direction]
   end
 
   private
