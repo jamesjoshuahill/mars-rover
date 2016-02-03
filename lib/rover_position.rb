@@ -16,7 +16,10 @@ class RoverPosition
   end
 
   def m
-    @state = [0,1,:n]
+    case direction
+    when :n
+      @state[1] += 1
+    end
   end
 
   private
