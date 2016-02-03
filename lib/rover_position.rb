@@ -3,4 +3,9 @@ class RoverPosition
   def initialize
     @position = [0, 0, :n]
   end
+
+  def l
+    @position = [0, 0, :w]
+  end
+
 end
