@@ -28,10 +28,11 @@ RSpec.describe RoverPosition do
      expect(rp.state).to eq([1,0,:e])
    end
 
-   it "l m" do
+   it "l m l" do
      rp.l
      rp.m
-     expect(rp.state).to eq([-1, 0,:w])
+     rp.l
+     expect(rp.state).to eq([-1, 0,:s])
    end
 
     it "r + r + m" do

@@ -7,12 +7,12 @@ class RoverPosition
 
   def l
     @direction_index -=1
-    @state = [0, 0, direction]
+    @state[2] = direction
   end
 
   def r
     @direction_index +=1
-    @state = [0, 0, direction]
+    @state[2] = direction
   end
 
   def m
