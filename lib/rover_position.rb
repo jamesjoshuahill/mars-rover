@@ -10,6 +10,11 @@ class RoverPosition
     @position = [0, 0, direction]
   end
 
+  def r
+    @direction_index +=1
+    @position = [0, 0, direction]
+  end
+
   private
   DIRECTIONS = [:n, :e, :s, :w]
 

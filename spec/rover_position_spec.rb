@@ -12,4 +12,10 @@ RSpec.describe RoverPosition do
      rp.l
      expect(rp.position).to eq([0,0,:w])
    end
+
+    it '#r' do
+     rp = RoverPosition.new
+     rp.r
+     expect(rp.position).to eq([0,0,:e])
+   end
 end
