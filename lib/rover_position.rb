@@ -1,5 +1,6 @@
 class RoverPosition
-  def get
-    [0,0,:n]
+  attr_reader :position
+  def initialize
+    @position = [0, 0, :n]
   end
 end

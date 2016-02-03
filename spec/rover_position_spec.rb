@@ -1,9 +1,9 @@
 require 'rover_position'
 
 RSpec.describe RoverPosition do
-   it 'returns a default state' do
+   it 'returns a default position' do
      rp = RoverPosition.new
 
-     expect(rp.get).to eq([0,0,:n])
+     expect(rp.position).to eq([0,0,:n])
    end
 end
