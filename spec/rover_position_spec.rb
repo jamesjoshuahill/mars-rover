@@ -41,4 +41,9 @@ RSpec.describe RoverPosition do
      expect(rp.state).to eq([0, -1,:s])
    end
 
+   it 'exec string cmd' do
+     rp.cmd 'rm'
+     expect(rp.state).to eq([1,0,:e])
+   end
+
  end

@@ -28,6 +28,12 @@ class RoverPosition
     end
   end
 
+  def cmd(command)
+    command.each_char do |c|
+      send c.to_sym
+    end
+  end
+
   private
   DIRECTIONS = [:n, :e, :s, :w]
 
